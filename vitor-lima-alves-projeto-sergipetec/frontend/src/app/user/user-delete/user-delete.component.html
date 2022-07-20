@@ -1,0 +1,35 @@
+<mat-card>
+    <mat-card-title>Tem certeza que deseja excluir esse usuário?</mat-card-title>
+    <form class="example-form" (ngSubmit)="delete()">
+        <div>
+        <mat-form-field class="user-info" appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input matInput type="text" class="form-control " name="nome" value="{{user.nome}}" disabled>
+        </mat-form-field>
+    
+        <mat-form-field class="user-info" appearance="fill">
+            <mat-label for="email">email</mat-label>
+            <input matInput type="text" class="form-control" name="email" value="{{user.email}}" disabled>
+        </mat-form-field>
+    
+        <mat-form-field class="user-info" appearance="fill">
+            <mat-label for="cpf">cpf</mat-label>
+            <input matInput type="text" class="form-control" name="cpf" value="{{user.cpf}}" disabled>
+        </mat-form-field>
+    
+        <mat-form-field class="user-info" appearance="fill">
+            <mat-label for="telefone">telefone</mat-label>
+            <input matInput type="text" class="form-control" name="telefone" value="{{user.telefone}}" disabled>
+        </mat-form-field>
+    
+        <mat-form-field class="user-info" appearance="fill">
+            <mat-label for="celular">celular</mat-label>
+            <input matInput type="text" class="form-control" name="celular" value="{{user.celular}}" disabled>
+        </mat-form-field>        
+        </div>
+        
+        <button class="delete-button" mat-raised-button color="warn" type="submit">Excluir</button>
+        <a href="" mat-raised-button>Cancelar</a>
+    </form>
+        
+</mat-card>

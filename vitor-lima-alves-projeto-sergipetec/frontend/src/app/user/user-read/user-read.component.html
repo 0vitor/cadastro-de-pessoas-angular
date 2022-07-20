@@ -1,0 +1,66 @@
+<form class="example-form">
+  
+  <mat-form-field class="user-info" appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput type="text" class="form-control "name="nome" value="{{user.nome}}" disabled>
+  </mat-form-field>
+  
+  <mat-form-field class="user-info" appearance="fill">
+    <mat-label for="email">email</mat-label>
+    <input matInput type="text" class="form-control" name="email" value="{{user.email}}" disabled>
+  </mat-form-field>
+  
+  <mat-form-field class="user-info" appearance="fill">
+    <mat-label for="cpf">cpf</mat-label>
+    <input matInput type="text" class="form-control" name="cpf" value="{{user.cpf}}" disabled>
+  </mat-form-field>
+  
+  <mat-form-field class="user-info" appearance="fill">
+    <mat-label for="telefone">telefone</mat-label>
+    <input matInput type="text" class="form-control" name="telefone" value="{{user.telefone}}" disabled>
+  </mat-form-field>
+  
+  <mat-form-field class="user-info" appearance="fill">
+    <mat-label for="celular">celular</mat-label>
+    <input matInput type="text" class="form-control" name="celular" value="{{user.celular}}" disabled>
+  </mat-form-field>
+  
+  <div *ngFor="let end of endereco; let i = index">
+    <h1 class="address-title">Endereço {{i+1}}</h1>
+  
+    <mat-form-field class="user-address">
+      <mat-label for="rua">rua</mat-label>
+      <input matInput type="text" class="form-control" name="rua" value="{{end.rua}}" disabled>
+    </mat-form-field>
+  
+    <mat-form-field class="user-address">
+      <mat-label for="numero">numero</mat-label>
+      <input matInput type="text" class="form-control" name="numero" value="{{end.numero}}" disabled>
+    </mat-form-field>
+  
+    <mat-form-field class="user-address">
+      <mat-label for="numero">bairro</mat-label>
+      <input matInput type="text" class="form-control" name="bairro" value="{{end.bairro}}" disabled>
+    </mat-form-field>
+  
+    <mat-form-field class="user-address">
+      <mat-label for="cidade">cidade</mat-label>
+      <input matInput type="text" class="form-control" name="cidade" value="{{end.cidade}}" disabled>
+    </mat-form-field>
+  
+    <mat-form-field class="user-address">
+      <mat-label for="cep">cep</mat-label>
+      <input matInput type="text" class="form-control" name="cep" value="{{end.cep}}" disabled>
+    </mat-form-field>
+  
+    <mat-form-field class="user-address">
+      <mat-label for="estado">estado</mat-label>
+      <input matInput type="text" class="form-control" name="estado" value="{{end.estado}}" disabled>
+    </mat-form-field>
+  
+    <mat-form-field class="user-address">
+      <mat-label for="pais">pais</mat-label>
+      <input matInput type="text" class="form-control" name="pais" value="{{end.pais}}" disabled>
+    </mat-form-field>
+  </div>
+</form>

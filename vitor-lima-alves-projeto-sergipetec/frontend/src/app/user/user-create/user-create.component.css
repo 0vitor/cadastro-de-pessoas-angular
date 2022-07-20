@@ -1,0 +1,28 @@
+form {
+    margin: 10px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-content {
+    margin-right: 20px;
+}
+
+.address-content {
+    margin-right: 20px;
+}
+
+.user-info, .user-address{
+    display: block;
+}
+
+form + button {
+    margin-left: 10px;
+}
+
+form button {
+    margin: 10px 10px 0 0
+}
